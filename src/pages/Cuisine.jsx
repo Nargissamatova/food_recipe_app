@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion, useScroll } from "framer-motion";
-import { Link, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Cuisine() {
