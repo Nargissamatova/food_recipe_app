@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 function Recipe() {
   let params = useParams();
   const [details, setDetails] = useState({});
+  const [activeTab, setActiveTab] = useState("instructions");
 
   const fetchDetails = async () => {
     const data = await fetch(
@@ -26,8 +27,18 @@ function Recipe() {
         <img src={details.image} alt={details.title} />
       </div>
       <Info>
-        <Button>Instructions</Button>
-        <Button>Ingredients</Button>
+        <Button
+          className={activeTab === "instructions" ? "active" : ""}
+          onClick={() => setActiveTab("instructions")}
+        >
+          Instructions
+        </Button>
+        <Button
+          className={activeTab === "ingredients" ? "active" : ""}
+          onClick={() => setActiveTab("ingredients")}
+        >
+          Ingredients
+        </Button>
       </Info>
     </DetailWrapper>
   );
@@ -41,8 +52,8 @@ const DetailWrapper = styled.div`
     background: linear-gradient(35deg, #494949, #313131);
     color: white;
   }
-  h4 {
-    margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 3rem;
   }
   ul {
     margin-top: 2rem;
