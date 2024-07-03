@@ -20,6 +20,8 @@ function Recipe() {
     fetchDetails();
   }, [params.name]);
 
+  console.log(details);
+
   return (
     <DetailWrapper>
       <div>
@@ -39,6 +41,15 @@ function Recipe() {
         >
           Ingredients
         </Button>
+        <div>
+          <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
+          <h4 dangerouslySetInnerHTML={{ __html: details.instructions }}></h4>
+        </div>
+        <ul>
+          {details.extendedIngredients?.map((ingredient) => (
+            <li key={ingredient.id}>{ingredient.original}</li>
+          ))}
+        </ul>
       </Info>
     </DetailWrapper>
   );
@@ -54,6 +65,9 @@ const DetailWrapper = styled.div`
   }
   h2 {
     margin-bottom: 3rem;
+  }
+  h3 {
+    font-size: 1rem;
   }
   ul {
     margin-top: 2rem;
@@ -72,7 +86,7 @@ const Button = styled.button`
   font-weight: 600;
 `;
 const Info = styled.div`
-  margin-left: 10rem;
+  margin-left: 5rem;
 `;
 
 export default Recipe;
