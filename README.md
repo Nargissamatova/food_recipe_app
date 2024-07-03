@@ -8,6 +8,10 @@ This Food Recipe App is a React-based application that allows users to search fo
 - **Filter Results**: Narrow down recipes based on cuisine, diet, and other preferences.
 - **Recipe Details**: View comprehensive details about each recipe, including ingredients and steps.
 
+## Screenshots
+
+![Home Screen](https://imgur.com/a/yq9QCEl)
+
 ## Technologies Used
 
 - **Frontend**: React
