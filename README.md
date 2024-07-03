@@ -10,7 +10,7 @@ This Food Recipe App is a React-based application that allows users to search fo
 
 ## Screenshots
 
-![Home page](https://imgur.com/a/yq9QCEl.png)
+![Home page](https://imgur.com/HuIJBRV.png)
 
 ## Technologies Used
 
