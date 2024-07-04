@@ -11,6 +11,8 @@ This Food Recipe App is a React-based application that allows users to search fo
 ## Screenshots
 
 ![Home page](https://imgur.com/HuIJBRV.png)
+![Cuisine page](https://imgur.com/WItibfE.png)
+![Recipe page](https://imgur.com/spLzBz7.png)
 
 ## Technologies Used
 
@@ -23,7 +25,7 @@ This Food Recipe App is a React-based application that allows users to search fo
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/food-recipe-app.git
+   git clone https://github.com/Nargissamatova/food_recipe_app.git
    ```
 2. Install dependencies:
    ```sh
